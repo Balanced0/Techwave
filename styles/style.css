@@ -35,3 +35,13 @@
   "zap zap resources";
   gap:30px;
 }
+@media screen and (max-width: 576px) {
+  .why-cards{
+    grid-template-areas:
+    "audio"
+    "mobile"
+    "global"
+    "zap"
+    "resources";
+  }
+}
