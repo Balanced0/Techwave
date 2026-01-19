@@ -12,3 +12,26 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.audio{
+  grid-area: audio;
+}
+.mobile{
+  grid-area: mobile;
+}
+.global{
+  grid-area: global;
+}
+.zap{
+  grid-area: zap;
+}
+.resources{
+  grid-area: resources;
+}
+.why-cards{
+  display: grid;
+  grid-template-areas:
+  "audio mobile mobile"
+  "audio global global"
+  "zap zap resources";
+  gap:30px;
+}
