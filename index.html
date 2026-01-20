@@ -28,9 +28,9 @@
             <div class = "max-w-[1200px] mt-0 mb-0 mx-auto flex justify-between py-[30px]  items-center px-6">
                 <img src = "./assets/TechWave.png" alt = "Techwave Logo">
                 <ol class = "flex gap-[32px] text-white max-sm:hidden">
-                    <ul class = ""><a href = "">About</a></ul>
-                    <ul class = ""><a href = "">Episodes</a></ul>
-                    <ul class = ""><a href = "">Host</a></ul>
+                    <ul class = ""><a href = "#about">About</a></ul>
+                    <ul class = ""><a href = "#episodes">Episodes</a></ul>
+                    <ul class = ""><a href = "#host">Host</a></ul>
                 </ol>
                 <button class = "text-white rounded-[10000px] bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] py-[12px] px-[16px] max-sm:hidden">Subscribe <i class="fa-solid fa-arrow-right"></i></button> 
                 <div class = "sm:hidden">
@@ -40,8 +40,8 @@
         </nav>
         <section class = "banner">
             <div class="banner-contents my-[101px] flex flex-col justify-center">
-                <div class="hero-circle w-full max-w-[350px] max-h-[350px] mx-auto ">
-                    <img src="./assets/hero-circle.png" class="object-center w-full h-full">
+                <div class="hero-circle w-full max-w-[350px] max-h-[350px] mx-auto">
+                    <img src="./assets/hero-circle.png" class="object-cover w-full h-full">
                     <img src="./assets/microphone.png" alt="microphone" class="microphone">
                     <div class="max-w-[75px]"><p class="text-[#1A0B2E] text-lg font-semibold bg-[#00FF88] px-[16px] py-[8px] rounded-[1000px]">NEW</p></div>
                     
@@ -50,7 +50,7 @@
                     <h2 class="text-white text-6xl font-extrabold mb-[8px] mt-[40px]">TechWave</h2>
                     <p class="text-white text-base mb-[24px]">Your daily dose of tech insights, productivity hacks, and personal growth</p>
                 </div>
-                <div class="banner-buttons flex justify-center gap-[8px]">
+                <div class="banner-buttons flex flex-wrap justify-center gap-[8px]">
                     <button class = "text-white rounded-[10000px] bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] py-[12px] px-[16px]"><i class="fa-brands fa-spotify"></i> Listen On Spotify</button>
                     <button class="text-[#00FF88] py-[12px] px-[16px] rounded-[10000px] border border-1 border-[#00FF88]"><i class="fa-regular fa-envelope"></i> Subscribe</button>
                 </div>
@@ -58,7 +58,7 @@
         </section>
     </header>
     <main>
-        <section class = "about bg-[#1A0B2E] flex flex-col justify-center">
+        <section id="about"class = "about bg-[#1A0B2E] flex flex-col justify-center">
             <div class = "about-container max-w-[1200px] mx-auto mt-[50px] mb-[120px]">
                 <div class ="about-info text-center text-white">
                     <h3 class ="text-5xl font-bold mb-[16px]">About the Podcast</h3>
@@ -128,7 +128,7 @@
         </section>
         <section class="featured bg-[#1A0B2E] p-6">
             <div class ="featured-container max-w-[1200px] mx-auto my-0 flex flex-col justify-center text-center">
-                <h3 class="text-white text-5xl font-bold mt-[120px] mb-[40px] max-sm:mt-[40px]">Featured Episodes</h3>
+                <h3 id="episodes" class="text-white text-5xl font-bold mt-[120px] mb-[40px] max-sm:mt-[40px]">Featured Episodes</h3>
                 <div class="featured-episodes grid grid-cols-3 gap-[30px] max-sm:grid-cols-1">
                     <div class="video-card rounded-2xl overflow-hidden">
                         <div class ="youtube-video aspect-video w-full">
@@ -183,7 +183,7 @@
                         </div>
                     </div>
                 </div>
-                <h3 class="text-white text-5xl font-bold mt-[120px] mb-[40px]">Meet The Host</h3>
+                <h3 id="host" class="text-white text-5xl font-bold mt-[120px] mb-[40px]">Meet The Host</h3>
                 <div class="host bg-[#250D44] flex p-10 justify-center items-center gap-6 rounded-[40px] mb-[120px] max-sm:mb-[40px]">
                     <div class="host-image object-cover max-w-[200px] max-h-[200px] w-full h-full shrink-0">
                         <img src="./assets/host.png" alt="host-image" class="w-full h-full object-cover">
@@ -217,10 +217,10 @@
         <div class="footer-container mx-auto max-w-[544px] py-[120px] flex flex-col justify-center items-center">
             <div class="flex justify-center object-cover w-full h-full max-w-96 max-h-14 px-6"><img src="./assets/TechWave.png" alt="Techwave Logo" class="object-cover w-full h-full"></div>
             <ul class="flex gap-10 my-8 justify-center flex-wrap">
-                <li><a href="" class="flex text-white gap-[5px] items-center font-medium"><div><img src="./assets/spotify.png" alt="spotify"></div>Spotify</a></li>
-                <li><a href="" class="flex text-white gap-[5px] items-center font-medium"><div><img src="./assets/apple-podcast.png" alt="apple-podcast"></div>Apple Podcasts</a></li>
-                <li><a href="" class="flex text-white gap-[5px] items-center font-medium"><div><img src="./assets/youtube-podcast.png" alt="youtube-podcast"></div>YouTube</a></li>
-                <li><a href="" class="flex text-white gap-[5px] items-center font-medium"><div><img src="./assets/twitter.png" alt="twitter"></div>Twitter</a></li>
+                <li><a href="https://open.spotify.com/" target="_blank"class="flex text-white gap-[5px] items-center font-medium"><div><img src="./assets/spotify.png" alt="spotify"></div>Spotify</a></li>
+                <li><a href="https://podcasts.apple.com/" target="_blank" class="flex text-white gap-[5px] items-center font-medium"><div><img src="./assets/apple-podcast.png" alt="apple-podcast"></div>Apple Podcasts</a></li>
+                <li><a href="https://www.youtube.com/" target="_blank" class="flex text-white gap-[5px] items-center font-medium"><div><img src="./assets/youtube-podcast.png" alt="youtube-podcast"></div>YouTube</a></li>
+                <li><a href="https://x.com/" target="_blank" class="flex text-white gap-[5px] items-center font-medium"><div><img src="./assets/twitter.png" alt="twitter"></div>Twitter</a></li>
             </ul>
             <p class="text-white text-center">© 2026 TechWave Podcast. All rights reserved.</p>
         </div>
