@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: center;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 .audio{
@@ -43,6 +44,18 @@ footer{
   background-repeat: no-repeat;
   background-position:center;
   background-size:cover;
+}
+.hero-circle{
+  position:relative;
+}
+.hero-circle .microphone{
+  transform: translate(97%,-150%);
+}
+.hero-circle div p{
+  box-shadow: 0px 0px 15px 0px #00FF88;
+}
+.hero-circle div{
+  transform: translate(330%,-1150%);
 }
 @media screen and (max-width: 576px) {
   .why-cards{

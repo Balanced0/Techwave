@@ -24,7 +24,7 @@
 </head>
 <body class = "inter-font">
     <header>
-        <nav class = "bg-[#1A0B2E]">
+        <nav class = "bg-[#1A0B2E] border-b-[1px] border-[#412567]">
             <div class = "max-w-[1200px] mt-0 mb-0 mx-auto flex justify-between py-[30px]  items-center px-6">
                 <img src = "./assets/TechWave.png" alt = "Techwave Logo">
                 <ol class = "flex gap-[32px] text-white max-sm:hidden">
@@ -39,11 +39,22 @@
             </div>
         </nav>
         <section class = "banner">
-            <img src="./assets/hero-circle.png">
-            <div class = "banner-info">
-                <h2>TechWave</h2>
-                <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
-            </div>
+            <div class="banner-contents my-[101px] flex flex-col justify-center">
+                <div class="hero-circle w-full max-w-[350px] max-h-[350px] mx-auto ">
+                    <img src="./assets/hero-circle.png" class="object-center w-full h-full">
+                    <img src="./assets/microphone.png" alt="microphone" class="microphone">
+                    <div class="max-w-[75px]"><p class="text-[#1A0B2E] text-lg font-semibold bg-[#00FF88] px-[16px] py-[8px] rounded-[1000px]">NEW</p></div>
+                    
+                </div>
+                <div class = "banner-info text-center">
+                    <h2 class="text-white text-6xl font-extrabold mb-[8px] mt-[40px]">TechWave</h2>
+                    <p class="text-white text-base mb-[24px]">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                </div>
+                <div class="banner-buttons flex justify-center gap-[8px]">
+                    <button class = "text-white rounded-[10000px] bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] py-[12px] px-[16px]"><i class="fa-brands fa-spotify"></i> Listen On Spotify</button>
+                    <button class="text-[#00FF88] py-[12px] px-[16px] rounded-[10000px] border border-1 border-[#00FF88]"><i class="fa-regular fa-envelope"></i> Subscribe</button>
+                </div>
+            </div>  
         </section>
     </header>
     <main>
