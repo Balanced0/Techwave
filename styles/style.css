@@ -35,6 +35,9 @@
   "zap zap resources";
   gap:30px;
 }
+.host{
+  display:flex;
+}
 @media screen and (max-width: 576px) {
   .why-cards{
     grid-template-areas:
@@ -43,5 +46,8 @@
     "global"
     "zap"
     "resources";
+  }
+  .host{
+    flex-direction: column;
   }
 }
